@@ -1,0 +1,22 @@
+.post {
+	max-width: 800px;
+	margin-top: 50px;
+
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+}
+
+.title {
+	font-size: 44px;
+}
+
+.descr {
+	margin-top: 50px;
+}
+
+.loader {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}

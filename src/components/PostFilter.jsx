@@ -1,12 +1,11 @@
 import React from "react";
 import MyInput from "./UI/input/MyInput";
-import MySelect from "./UI/select/MySelect";
+import { MySelect } from "./UI/select/MySelect";
 
-function PostFilter ( { filter, setFilter } ) {
+export const PostFilter = ( { filter, setFilter } ) => {
 
 	return (
-		<div>
-						
+		<div>		
 			<MyInput 
 				placeholder="Search..."
 				value={ filter.query }
@@ -25,5 +24,3 @@ function PostFilter ( { filter, setFilter } ) {
 		</div>
 	)
 }
-
-export default PostFilter;

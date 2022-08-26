@@ -1,12 +1,11 @@
 import React from "react";
 import cl from './MyModal.module.css';
 
-function MyModal ( { children, visible, setVisible } ) {
-
+export const MyModal = ( { children, visible, setVisible } ) => {
 	const rootStyle = [cl.myModal];
 
 	if( visible ){
-		rootStyle.push(cl.active);
+		rootStyle.push( cl.active );
 	}
 
 	return (
@@ -18,5 +17,3 @@ function MyModal ( { children, visible, setVisible } ) {
 	)
 
 }
-
-export default MyModal;

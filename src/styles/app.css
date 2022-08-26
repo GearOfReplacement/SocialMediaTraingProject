@@ -6,7 +6,8 @@
 
 #root {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .App {
@@ -21,4 +22,40 @@
 	padding: 15px;
 	border: 2px solid teal;
 	margin-top: 15px;
+}
+
+.post__content {
+	max-width: 550px;
+}
+
+.post__btns {
+	display: flex;
+	max-width: 180px;
+	gap: 10px;
+}
+
+.login {
+	margin-top: 50px;
+}
+
+.login__form {
+	width: 500px;
+	
+	border: 1px solid teal;
+	padding: 20px 30px 30px 30px;
+}
+
+.loader {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.create__btn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.select__page {
+	margin-top: 30px;
 }

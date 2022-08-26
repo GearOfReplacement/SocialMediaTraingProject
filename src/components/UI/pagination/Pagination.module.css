@@ -1,0 +1,22 @@
+.pagination {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.pag_btn {
+	padding: 5px 15px;
+	color: teal;
+	font-size: 14px;
+	background: transparent;
+	border: 1px solid teal;
+	cursor: pointer;
+}
+
+.pag_btn_active {
+	border: 1px solid tomato;
+	color: tomato;
+}

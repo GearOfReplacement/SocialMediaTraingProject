@@ -1,9 +1,9 @@
 import React from "react";
 
-function MySelect ( { options, defaultValue, value, onChange } ) {
+export const MySelect = ( { options, defaultValue, value, onChange, ...props } ) => {
 
 	return (
-		<select value={ value } onChange={ ( e ) => { onChange( e.target.value ) } }>
+		<select {...props} value={ value } onChange={ ( e ) => { onChange( e.target.value ) } }>
 			<option disabled value="">{ defaultValue }</option>
 			{
 				options.map( ( option ) => 
@@ -15,5 +15,3 @@ function MySelect ( { options, defaultValue, value, onChange } ) {
 		</select>
 	)
 }
-
-export default MySelect;
